@@ -1,0 +1,54 @@
+======================================================================
+FAR SENSITIVITY ANALYSIS — Dual-Trigger Dynamic MSR Protocol
+QK-SVR Directional Trigger (Trigger 2)
+======================================================================
+
+METHOD : Bernoulli sliding-window model on walk-forward backtesting
+MODEL  : QK_SVR
+REGIMES: pre_crisis, post_crisis (non-crisis folds only)
+K      : [3, 5, 7] consecutive trading days
+H      : [1, 5, 22] forecasting horizons (days)
+
+NOTE: FAR reported is PRE-FILTER (Trigger 1 volatility gate not applied).
+Actual deployment FAR expected substantially lower.
+
+─── H = 1 day(s) ───────────────────────────────────────────
+  Non-crisis folds : 18 (1.5 years)
+  p_down (weighted): 0.4444
+
+     K   FAR/year (pre-filter)  Note
+  ────  ──────────────────────  ─────────────────────────────────────────────
+     3                   12.00  Faster detection; higher intervention fatigue risk
+     5                    3.54  Baseline — optimal balance (manuscript recommendation)
+     7                    0.62  Lower FAR; may exceed 20-day statutory MSR window
+
+─── H = 5 day(s) ───────────────────────────────────────────
+  Non-crisis folds : 19 (1.6 years)
+  p_down (weighted): 0.4737
+
+     K   FAR/year (pre-filter)  Note
+  ────  ──────────────────────  ─────────────────────────────────────────────
+     3                   12.00  Faster detection; higher intervention fatigue risk
+     5                    4.87  Baseline — optimal balance (manuscript recommendation)
+     7                    0.96  Lower FAR; may exceed 20-day statutory MSR window
+
+─── H = 22 day(s) ───────────────────────────────────────────
+  Non-crisis folds : 18 (1.5 years)
+  p_down (weighted): 0.5000
+
+     K   FAR/year (pre-filter)  Note
+  ────  ──────────────────────  ─────────────────────────────────────────────
+     3                   12.00  Faster detection; higher intervention fatigue risk
+     5                    6.38  Baseline — optimal balance (manuscript recommendation)
+     7                    1.41  Lower FAR; may exceed 20-day statutory MSR window
+
+──────────────────────────────────────────────────────────────────────
+MANUSCRIPT REFERENCE
+  Section 6.2 (K calibration paragraph)
+  Appendix D, Table D1, Phase 1 Success KPI: FAR < 1.0/year
+
+CITATION
+  Tran Quang Canh (2026). Crisis-Period Trading Resilience and
+  Dynamic MSR Reform: A Quantum Kernel Approach to EU ETS Carbon
+  Price Forecasting. Energy Policy.
+======================================================================
