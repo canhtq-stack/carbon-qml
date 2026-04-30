@@ -1,0 +1,4 @@
+kernel,dkl_from_haar,spectral_decay_gini,n_samples
+Quantum (QK-SVR),2.8171126574063803,-0.9450290393541162,50
+RBF (classical),1.6185359533019918,-0.8264081724243881,50
+Laplacian (classical),0.36764196352239553,-0.4209116277884355,50

@@ -1,0 +1,4 @@
+horizon,regime,rmse_qk_svr,rmse_best_classical,uncertainty_reduction_pct,da_qk_svr_pct,da_best_classical_pct,da_improvement_pp,hedging_savings_eur,assumption_market_size,assumption_cost_ratio_pct,assumption_notes
+1,peak_crisis,0.028681,0.018039,-58.99,46.2,61.5,-15.4,0.0,28000000000,0.5,0 transaction cost; savings prop. to RMSE uncertainty reduction
+5,peak_crisis,0.024882,0.01703,-46.11,50.0,83.3,-33.3,0.0,28000000000,0.5,0 transaction cost; savings prop. to RMSE uncertainty reduction
+22,peak_crisis,0.0287,0.01833,-56.57,46.2,61.5,-15.4,0.0,28000000000,0.5,0 transaction cost; savings prop. to RMSE uncertainty reduction
