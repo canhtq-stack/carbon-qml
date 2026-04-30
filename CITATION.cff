@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+type: software
+
+title: "Replication Archive: Crisis-Period Trading Resilience and Dynamic MSR Reform: A Quantum Kernel Approach to EU ETS Carbon Price Forecasting"
+
+abstract: >
+  Replication code and data for the manuscript "Crisis-Period Trading Resilience
+  and Dynamic MSR Reform: A Quantum Kernel Approach to EU ETS Carbon Price
+  Forecasting" (submitted to Energy Policy, Elsevier). The archive contains
+  Python scripts implementing QK-SVR and eight classical benchmarks in an
+  expanding-window walk-forward framework, statistical validation routines,
+  trading simulations, ablation studies, figure generation, VIF analysis,
+  descriptive statistics, and a bootstrap CI utility for hedging savings
+  estimation.
+
+authors:
+  - family-names: "Tran"
+    given-names: "Quang Canh"
+    affiliation: "Ho Chi Minh City University of Economics and Finance (UEF)"
+    orcid: "https://orcid.org/0000-0001-6513-9319"
+    email: "canhtq@uef.edu.vn"
+
+repository-code: "https://github.com/canhtq-stack/carbon-qml"
+url: "https://doi.org/10.5281/zenodo.19913059"
+doi: "10.5281/zenodo.19913059"
+license: MIT
+version: "1.0.0"
+
+date-released: "2026-04-30"
+
+keywords:
+  - quantum kernel methods
+  - carbon price forecasting
+  - EU ETS
+  - Market Stability Reserve
+  - energy crisis
+  - regime-conditional forecasting
+
+references:
+  - type: article
+    title: >
+      Crisis-Period Trading Resilience and Dynamic MSR Reform: A Quantum Kernel
+      Approach to EU ETS Carbon Price Forecasting
+    authors:
+      - family-names: "Tran"
+        given-names: "Quang Canh"
+    journal: "Energy Policy"
+    year: 2026
+    doi: "10.XXXX/XXXXXX"
